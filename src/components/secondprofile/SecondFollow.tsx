@@ -1,15 +1,15 @@
 import {View, Text, StyleSheet} from "react-native";
 
 const stats = [
-  {key: 1, value: 6, label: "posts"},
-  {key: 2, value: 367, label: "followers"},
-  {key: 3, value: 210, label: "following"}
+  {key: 1, value: 2, label: "posts"},
+  {key: 2, value: 1167, label: "followers"},
+  {key: 3, value: 3, label: "following"}
 ]
 
-const Follow = () => {
+const SecondFollow = () => {
   return(
     <View style={styles.container}>
-      <Text style={styles.usernameText}>John</Text>
+      <Text style={styles.usernameText}>Johnny</Text>
       
       <View style={styles.numberCards}>
         {stats.map((stat) => (
@@ -49,4 +49,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Follow;
+export default SecondFollow;

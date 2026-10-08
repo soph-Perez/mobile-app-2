@@ -27,7 +27,7 @@ export default function Index() {
 
         <Image
           style={styles.mainPostImg}
-          source={require("@/assets/images/posts/main-page-post.jpg")}
+          source={require("@/assets/images/posts/second-bropork1.jpeg")}
         />
 
         <BottomNav />

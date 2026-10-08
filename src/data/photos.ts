@@ -70,3 +70,14 @@ export const personalPhotos: Photo[] = [
     image: require("../../assets/images/posts/post-johnpork6.jpeg")
   },
 ]
+
+export const secondPhotos: Photo[] = [
+  {
+    id: 1,
+    image: require("../../assets/images/posts/second-bropork1.jpeg")
+  },
+  {
+    id: 2,
+    image: require("../../assets/images/posts/second-bropork2.jpeg")
+  },
+]

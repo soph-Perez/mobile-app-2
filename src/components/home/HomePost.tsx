@@ -1,4 +1,5 @@
-import {View, Image, Text, StyleSheet} from "react-native";
+import {View, Image, Text, Pressable, StyleSheet} from "react-native";
+import {router} from "expo-router";
 
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
@@ -11,7 +12,11 @@ const HomePost = () => {
           source={require("@/assets/images/posts/main-page-profile.jpg")}
         />
         <View>
-          <Text style={styles.usernameText}>b@ddie$_p0rk$</Text>
+          <Pressable onPress={() => router.push("/secondprofile")}>
+            <Text style={styles.usernameText}>
+              b@ddie$_p0rk$
+            </Text>
+          </Pressable>
           <Text style={styles.locationText}>slaughter house</Text>
         </View>
       </View>
@@ -49,6 +54,7 @@ const styles = StyleSheet.create({
   usernameText: {
     color: "#FFFFFF",
     fontWeight: "600",
+    textDecorationLine: "underline",
   },
   locationText: {
     color: "#a8a8a8",
